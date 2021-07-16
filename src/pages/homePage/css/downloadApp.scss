@@ -1,0 +1,92 @@
+.download_app {
+    margin: 10vh 10vw;
+    text-align: center;
+    .download_wrapper {
+        margin: 10vh 0;
+        display: flex;
+        flex-direction: row;
+        .igContainer {
+            img {
+                width: 30vw;
+            }
+        }
+        .descBox {
+            flex: 6;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: auto;
+            margin-left: 10vw;
+            h3 {
+                text-align: justify;
+                margin-bottom: 10vh;
+            }
+            button {
+                font-weight: bold;
+                font-size: medium;
+                width: 18vw;
+                height: 8vh;
+                margin: auto;
+                color: rgb(29, 29, 29);
+                background-color: #db56fc;
+                border: none;
+                border-radius: 15px;
+                transition-duration: 0.4s;
+                &:hover {
+                    box-shadow: 5px 4px 14px 0 rgba(9, 32, 2, 0.664);
+                    transition-duration: 0.4s;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .download_app {
+        margin: 5vh 10vw;
+        text-align: center;
+        h1 {
+            font-size: 32px !important ;
+            text-align: justify;
+            // margin-bottom: 10vh;
+        }
+        .download_wrapper {
+            margin: 10vh 0;
+            display: flex;
+            flex-direction: column;
+            .igContainer {
+                img {
+                    width: 100%;
+                }
+                margin-bottom: 2vh;
+            }
+            .descBox {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: auto;
+                margin: 0 !important;
+                h1 {
+                    font-size: 24 !important ;
+                    text-align: justify;
+                    // margin-bottom: 10vh;
+                }
+                button {
+                    font-weight: bold;
+                    font-size: medium;
+                    width: 60%;
+                    margin: auto;
+                    color: rgb(29, 29, 29);
+                    background-color: #db56fc;
+                    border: none;
+                    border-radius: 15px;
+                    transition-duration: 0.4s;
+                    &:hover {
+                        box-shadow: 5px 4px 14px 0 rgba(9, 32, 2, 0.664);
+                        transition-duration: 0.4s;
+                    }
+                }
+            }
+        }
+    }
+}

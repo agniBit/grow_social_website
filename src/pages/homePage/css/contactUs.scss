@@ -1,0 +1,20 @@
+.contactUs {
+    padding: 10vh 10vw;
+    background-color: rgb(255, 162, 162);
+    h1 {
+        text-align: center;
+        margin-top: 0;
+    }
+    text-align: center;
+    .contactUsWraper {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        .contactCard {
+            flex: 1;
+        }
+    }
+}

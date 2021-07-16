@@ -1,0 +1,25 @@
+.logoHead {
+    min-width: 100px;
+    // width: 100%;
+    margin: auto;
+    img {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+        // margin: auto;
+    }
+}
+// h3 {
+
+// }
+// p {
+
+// }
+.contactSupportButton {
+    border-color: black;
+    // border-radius: 10px;
+    background-color: transparent;
+    &:hover {
+        background-color: aqua;
+    }
+}

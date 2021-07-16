@@ -1,0 +1,59 @@
+.featureCard {
+    min-width: 200px;
+    flex: 1;
+    display: block;
+    margin-bottom: 10vh;
+    .cardWraper {
+        height: 100%;
+        margin: 0 20px;
+        padding-top: 1%;
+        border-radius: 20px;
+        -webkit-box-shadow: 10px 11px 29px 1px rgba(0,0,0,0.64);
+        -moz-box-shadow: 10px 11px 29px 1px rgba(0,0,0,0.64);
+        box-shadow: 10px 11px 29px 1px rgba(0,0,0,0.64);
+        transition: .45s;
+        &:hover {
+            box-shadow: none;
+            transition: .45s;
+            .HeaderImage {
+                transition: .45s;
+                -webkit-box-shadow: 10px 11px 29px 1px rgba(0,0,0,0.64);
+                -moz-box-shadow: 10px 11px 29px 1px rgba(0,0,0,0.64);
+                box-shadow: 10px 11px 29px 1px rgba(0,0,0,0.64);
+            }
+        }
+        .HeaderImage{
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            justify-content: center;
+            padding: 5%;
+            width: 8vw;
+            height: 8vw;
+            border-radius: 100%;
+            img {
+                margin: auto;
+                width: 8vw;
+                height: 8vw;
+                scale: 1.5;
+                overflow: hidden;
+            }
+        }
+        h1 {
+            margin: 0;
+            padding: 0;
+        }
+        h3 {
+            margin: 0;
+            padding: 0;
+            padding-bottom: 20px;
+            text-align: center;
+            font-size: medium;
+            font-weight: 400;
+        }
+    }
+}

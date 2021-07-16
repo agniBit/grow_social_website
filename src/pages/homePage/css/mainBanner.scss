@@ -1,0 +1,179 @@
+.mainBanner{
+    // .is-visible {
+    //     opacity: 1;
+    //     transform: rotateZ(-2deg);
+    // }
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    background: rgb(131, 34, 195);
+    background: linear-gradient(0deg, rgb(156, 18, 211) 0%, rgb(255, 106, 19) 100%);
+    h1 {
+        font-size: 48px;
+        color: white;
+        align-items: center;
+    }
+    p {
+        color: white;
+        text-align: justify;
+    }
+    .bannerBox {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        .textBox1 {
+            overflow: hidden;
+            display: flex;
+            flex: 6;
+            flex-direction: column;
+            align-items: left;
+            margin: auto;
+            justify-content: center;
+            margin-left: 8vw;
+            .buttonWrap {
+                padding-top: 5vh;
+                justify-content: center;
+                align-content: center;
+                margin-bottom: 20px;
+                .p_btn {
+                    font-weight: bold;
+                    font-size: medium;
+                    width: 18vw;
+                    height: 8vh;
+                    margin: auto;
+                    border-radius: 15px;
+                    transition-duration: 0.4s;
+                }
+                .btn1 {
+                    color: rgb(29, 29, 29);
+                    margin-right: 25px;
+                    background-color: #4dee52;
+                    border: none;
+                    &:hover {
+                        box-shadow: 5px 4px 14px 0 rgba(9, 32, 2, 0.664);
+                        transition-duration: 0.4s;
+                    }
+                }
+                .btn2 {
+                    margin-right: 25px;
+                    background-color: transparent;
+                    border-color: white;
+                    transition-duration: 0.4s;
+                    color: white;
+                    &:hover {
+                        background-color: orange;
+                        color: black;
+                        transition-duration: 0.4s;
+                    }
+                }
+            }
+        }
+        .bannerImage {
+            display: flex;
+            flex: 4;
+            img {
+                display: block;
+                width: 100%;
+                height: auto;
+                padding-right: 8vw;
+                margin: auto;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .mainBanner{
+        // .is-visible {
+        //     opacity: 1;
+        //     transform: rotateZ(-2deg);
+        // }
+        margin: 0px;
+        padding: 0px;
+        height: 100vh;
+        background: rgb(131, 34, 195);
+        background: linear-gradient(0deg, rgb(156, 18, 211) 0%, rgb(255, 106, 19) 100%);
+        h1 {
+            font-size: 32px;
+            color: white;
+            align-items: center;
+        }
+        p {
+            font-size: 20px;
+            color: white;
+            text-align: justify;
+        }
+        .bannerBox {
+            display: block;
+            flex-direction: column !important;
+            .textBox1 {
+                padding: 0 10vw;
+                z-index: 1000;
+                position: absolute;
+                height : 100%;
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+                margin: auto;
+                justify-content: center;
+                .buttonWrap {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-content: center;
+                    .p_btn {
+                        font-weight: bold;
+                        font-size: medium;
+                        width: 80%;
+                        height: 8vh;
+                        margin: auto;
+                        border-radius: 15px;
+                        transition-duration: 0.4s;
+                    }
+                    .btn1 {
+                        color: rgb(29, 29, 29);
+                        background-color: #4dee52;
+                        border: none;
+                        margin-bottom: 3vh;
+                        &:hover {
+                            box-shadow: 5px 4px 14px 0 rgba(9, 32, 2, 0.664);
+                            transition-duration: 0.4s;
+                        }
+                    }
+                    .btn2 {
+                        background-color: orange;
+                        border: none;
+                        transition-duration: 0.4s;
+                        color: white;
+
+                        &:hover {
+                            background-color: orange;
+                            color: black;
+                            box-shadow: 5px 4px 14px 0 rgba(9, 32, 2, 0.664);
+                            transition-duration: 0.4s;
+                            transition-duration: 0.4s;
+                        }
+                    }
+                }
+            }
+            .bannerImage {
+                filter: blur(2px);
+                -webkit-filter: blur(2px);
+                display: block;
+                float: bottom;
+                height: 100%;
+                overflow: hidden;
+                align-items: flex-end;
+                img {
+                    padding-top: 45vh;
+                    height: 100%;
+                    display: block;
+                    width: auto !important;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+}

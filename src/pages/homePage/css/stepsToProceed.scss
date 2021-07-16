@@ -1,0 +1,56 @@
+.steps {
+    margin: 5vh 7vw;
+    text-align: center;
+    .wrap {
+        padding-top: 5vh;
+        display: flex;
+        flex-direction: row;
+        .imageBox {
+            flex: 1;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .contant {
+            flex: 1;
+            display: block;
+            margin: auto;
+            text-align: justify !important;
+            padding-left: 0 !important;
+            button {
+                margin-top: 10vh;
+                font-weight: bold;
+                font-size: medium;
+                width: 18vw;
+                height: 8vh;
+                border-radius: 15px;
+                transition-duration: 0.4s;
+                color: rgb(29, 29, 29);
+                background-color: #4dee52;
+                border: none;
+                &:hover {
+                    box-shadow: 5px 4px 14px 0 rgba(9, 32, 2, 0.664);
+                    transition-duration: 0.4s;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .steps {
+        .wrap {
+            flex-direction: column;
+            .contant {
+                button {
+                    margin-left: 20%;
+                    margin-right: 20%;
+                    width: 60% !important;
+                    margin-top: 5vh;
+                }
+            }
+        }
+    }
+}
