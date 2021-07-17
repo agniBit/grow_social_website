@@ -10,11 +10,10 @@ class ContactCard extends React.Component{
                 </div>
                 <h3>{this.props.heading}</h3>
                 <p>{this.props.desc}</p>
-                <button className='contactSupportButton'>{this.props.buttonName}</button>
+                <a href={this.props.href}><button className='contactSupportButton'>{this.props.buttonName}</button></a>
             </div>
         );
     }
 }
-
 
 export default ContactCard;
