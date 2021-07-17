@@ -1,5 +1,5 @@
 .contactUs {
-    padding: 10vh 10vw;
+    padding: 5vh 10vw;
     background-color: rgb(255, 162, 162);
     h1 {
         text-align: center;
@@ -13,8 +13,16 @@
         flex-wrap: wrap;
         align-items: center;
         align-content: center;
-        .contactCard {
-            flex: 1;
-        }
+        .breakContact {
+            flex: 1; 
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+            .contactCard {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+            }
+         }
     }
 }
